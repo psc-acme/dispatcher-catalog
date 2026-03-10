@@ -1,0 +1,38 @@
+{
+    "name": "psc-acme/dispatcher-catalog",
+    "description": "Package dispatcher-catalog for psc-acme organization",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\DispatcherCatalog\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "symfony/cache": "^7.0",
+        "doctrine/dbal": "^4.0"
+    },
+    "require-dev": {
+        "behat/behat": "^3.14",
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "vimeo/psalm": "^5.0"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
